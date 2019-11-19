@@ -9,6 +9,21 @@
 <div> hey there partner! <br /> 
 <strong>{{ boldmessage }}</strong><br />
  </div> 
+ 
+ <!--注释，等数据库章节练习完成再写
+ <div>
+	{% if categories %}
+		<url>
+		{% for category in categories %}
+			<li>{{category.name}}</li>
+		{% endfor %}
+		</url>
+	{%else%}
+		<strong>There are no categories present.</strong>
+	{% endif %}
+ </div>
+ -->
+ 
  <div> <a href="/rango/about/">About</a><br /> 
  <img src="{% static 'images/color.jpg' %}" width="100%"
 		alt="Picture of color"/>
