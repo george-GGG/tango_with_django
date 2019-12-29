@@ -14,7 +14,7 @@ def index(request):
 	context_dict['categories'] = category_list
 	context_dict['pages'] = page_list
 	
-	return render(request, 'rango/index.html', context_dict)
+	return render(request, 'rango/index.html', context_dict)#这里的根目录是/template/目录，已在settings中设置
 	
 def about(request):
 	return HttpResponse("Rango says here is the about page.<a href='/rango/'>index</a>")
